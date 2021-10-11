@@ -17,8 +17,8 @@ VCF files storing low frequency info for SARS-CoV-2 are not widely available due
 
 ## Workflow figure
 ![covid_freq-Group6 (1)](https://user-images.githubusercontent.com/72709799/136825620-9f37b39e-0076-42ef-82fb-113b5a597e26.jpeg)
-![ZomboMeme 11102021113553](https://user-images.githubusercontent.com/72709799/136825672-7bfe09dc-9e25-4cf0-a850-0d9e26dfd9e2.jpg)
 
+<img src="/Users/danielagustinho/Downloads/ZomboMeme 11102021113553.jpg" alt="drawing" width="200"/>
 ------
 ## cov2db will contain the following information:
 * ENA/SRA id (and bioproject)

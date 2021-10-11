@@ -5,7 +5,7 @@ VCF files storing low frequency info for SARS-CoV-2 are not widely available due
 
 ### Workflow figure
 
-add here
+![covid db workflow figure](https://github.com/collaborativebioinformatics/covid_freq/blob/main/coviddb_workflow.png)
 
 ------
 ### Idea to store source data (SRA id), reference genome, and VCF data

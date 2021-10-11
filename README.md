@@ -52,6 +52,3 @@ VCF files storing low frequency info for SARS-CoV-2 are not widely available due
 * Has intrahost variant V1 been previously observed? If so, when and where? 
 * Show me a histogram of frequency of intrahost variants across the reference (for all data in the database)
 * filter intrahost variants by pvalue, min coverage, variant caller, etc
-
-------
-

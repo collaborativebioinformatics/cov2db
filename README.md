@@ -20,6 +20,7 @@ VCF files storing low frequency info for SARS-CoV-2 are not widely available due
 
 
 <img src="ZomboMeme 11102021113553.jpg" width="500">
+
 ------
 ## cov2db will contain the following information:
 * ENA/SRA id (and bioproject)

@@ -11,7 +11,7 @@ VCF files storing low frequency info for SARS-CoV-2 are not widely available due
 * Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb) <br>
 * Nick Sapoval, Rice University (Team co-lead, data acquisition, writer) <br>
 * Todd Treangen (Team Lead) <br>
-* 
+
 ## Related work
 [VAPr](https://github.com/ucsd-ccbb/VAPr/) is an excellent mongodb based database for storing variant info. USCS SARS-CoV-2 genome broswers also provides visualization of intrahost variants [here](https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=NC_045512v2%3A1%2D29903&hgsid=1183075721_4GlEuE8o51gGamZyAQfT5UgwpPhq). 
 

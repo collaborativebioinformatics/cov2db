@@ -52,7 +52,6 @@ Supporting queries based on the following fields.
 2. The VCF output was then annonated with snpEff. <br>
   **To install snpEff** <br>
   `wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
-  
   unzip snpEff_latest_core.zip` <br>
   **To annotate** <br> 
   `java -Xmx8g -jar ../path/to/snpEff/snpEff.jar NC_045512.2 your_input.vcf > output.ann.vcf`

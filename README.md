@@ -41,7 +41,7 @@ Supporting queries based on the following fields.
 ## Methods
 
 ### Workflow figure✍️
-![covid_freq-Group6 (1)](https://user-images.githubusercontent.com/72709799/136825620-9f37b39e-0076-42ef-82fb-113b5a597e26.jpeg)
+![covid_freq-Group6](https://user-images.githubusercontent.com/72709799/136994624-efa35249-9303-435c-887d-b8cfa58e7215.jpeg)
 
 ## Related work
 [VAPr](https://github.com/ucsd-ccbb/VAPr/) is an excellent mongodb based database for storing variant info. UCSC SARS-CoV-2 genome broswers also provides visualization of intrahost variants [here](https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=NC_045512v2%3A1%2D29903&hgsid=1183075721_4GlEuE8o51gGamZyAQfT5UgwpPhq). 

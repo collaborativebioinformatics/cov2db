@@ -2,7 +2,7 @@
 # cov2db: a low frequency variant DB for SARS-CoV-2
 
 ![cov2db_logo_bg](https://user-images.githubusercontent.com/9452819/137010749-a6bebcbd-ddb6-4b0b-900e-a85fe9125c59.png)
-(SARS-CoV-2 Illustration image credit: Davian Ho for the Innovative Genomics Institute)
+(SARS-CoV-2 Illustration image credit: Davian Ho for the [Innovative Genomics Institute](https://innovativegenomics.org/free-covid-19-illustrations/))
 
 -----
 

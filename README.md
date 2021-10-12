@@ -1,7 +1,7 @@
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=https://github.com/collaborativebioinformatics/cov2db)
 # cov2db: a low frequency variant DB for SARS-CoV-2
 
-![cov2db_logo](https://user-images.githubusercontent.com/9452819/137005028-0ed0f771-0286-4d75-8310-42f56d296b0f.png)
+![cov2db_logo_bg](https://user-images.githubusercontent.com/9452819/137010749-a6bebcbd-ddb6-4b0b-900e-a85fe9125c59.png)
 (SARS-CoV-2 Illustration image credit: Davian Ho for the Innovative Genomics Institute)
 
 -----

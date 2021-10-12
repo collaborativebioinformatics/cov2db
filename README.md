@@ -1,3 +1,4 @@
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=https://github.com/collaborativebioinformatics/cov2db)
 # cov2db: a low frequency variant DB for SARS-CoV-2
 
 ## Problem

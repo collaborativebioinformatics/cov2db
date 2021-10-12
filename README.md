@@ -9,26 +9,61 @@ Thus, we propose **cov2db** a database resource for collecting low frequency var
 
 <!--- VCF files storing low frequency info for SARS-CoV-2 are not widely available due to their size and limited downstream usage to date. However, there are over 1.2 million sequenced datasets in ENA/SRA from COVID-19 samples, representing a unique opportunity to create a community resource for query and tracking intrahost viral evolution. The goal of this hackathon project is to create an easy to use database for the community that is able to store SARS-CoV-2 low frequency/intrahost variants. --->
 
+## Features
+
+Supporting queries based on the following fields.
+
+*Annotation:*
+- [x] Reference amino acid
+- [x] Variant amino acid
+- [x] Gene name
+- [x] Mutation type (missense, synonymous, upstream, etc.)
+
+*Variant call information:*
+- [x] Position
+- [x] Allele frequency
+- [x] Reference allele
+- [x] Alternative allele
+- [x] Coverage depth
+- [x] Strand bias
+
+*Sample metadata:* [in development]
+- [ ] Sequencing device
+- [ ] Library layout
+- [ ] Submission date
+- [ ] Study accession 
+- [ ] Variant caller
+
+### Example queries 
+
+[FILL IN WITH SAMPLE QUERY + SCREENSHOTS]
+
+## Methods
+
+### Workflow figure✍️
+![covid_freq-Group6 (1)](https://user-images.githubusercontent.com/72709799/136825620-9f37b39e-0076-42ef-82fb-113b5a597e26.jpeg)
+
+## Related work
+[VAPr](https://github.com/ucsd-ccbb/VAPr/) is an excellent mongodb based database for storing variant info. UCSC SARS-CoV-2 genome broswers also provides visualization of intrahost variants [here](https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=NC_045512v2%3A1%2D29903&hgsid=1183075721_4GlEuE8o51gGamZyAQfT5UgwpPhq). 
+
+-----
+
 ## Team members
 * Daniel Agustinho, Washington University (data acquisition, writer) <br>
 * Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH (Sysadmin, mongodb) <br>
 * Maria Jose, Pondicherry Central University (data acquisition, mongodb)
 * BaiWei Lo, University of Konstanz (data acquisition, QC) <br>
 * Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb) <br>
+* Sophie Poon, (Data acquisition, QC)<br>
+* Suresh Kumar, (QC)<br>
 * Nick Sapoval, Rice University (Team co-lead, data acquisition, writer) <br>
 * Todd Treangen (Team Lead) <br>
-
-## Related work
-[VAPr](https://github.com/ucsd-ccbb/VAPr/) is an excellent mongodb based database for storing variant info. UCSC SARS-CoV-2 genome broswers also provides visualization of intrahost variants [here](https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=NC_045512v2%3A1%2D29903&hgsid=1183075721_4GlEuE8o51gGamZyAQfT5UgwpPhq). 
-
-## Workflow figure✍️
-![covid_freq-Group6 (1)](https://user-images.githubusercontent.com/72709799/136825620-9f37b39e-0076-42ef-82fb-113b5a597e26.jpeg)
 
 
 <img src="ZomboMeme 11102021113553.jpg" width="500">
 
 ------
-## cov2db will contain the following information:
+<!--- ## cov2db will contain the following information:
 * ENA/SRA id (and bioproject)
 - [ ] assigned lineage/VOC of SRA sample
 - [ ] geographic location 
@@ -57,4 +92,5 @@ Thus, we propose **cov2db** a database resource for collecting low frequency var
 #### Queries to support
 * Has intrahost variant V1 been previously observed? If so, when and where? 
 * Show me a histogram of frequency of intrahost variants across the reference (for all data in the database)
-* filter intrahost variants by pvalue, min coverage, variant caller, etc
+* filter intrahost variants by pvalue, min coverage, variant caller, etc  --->
+

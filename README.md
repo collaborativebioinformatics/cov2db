@@ -1,6 +1,11 @@
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=https://github.com/collaborativebioinformatics/cov2db)
 # cov2db: a low frequency variant DB for SARS-CoV-2
 
+![cov2db_logo](https://user-images.githubusercontent.com/9452819/137005028-0ed0f771-0286-4d75-8310-42f56d296b0f.png)
+(SARS-CoV-2 Illustration image credit: Davian Ho for the Innovative Genomics Institute)
+
+-----
+
 ## Problem
 
 Global SARS-CoV-2 sequencing efforts have resulted in a massive genomic dataset available to the public for a variety of analyses. However, the two most common resources are genome assemblies (e.g. deposited in GISAID and GenBank) and raw sequencing reads. Both of these limit the quantity of information, especially with respect to variants found within the SARS-CoV-2 populations. Genome assemblies only contain consensus level information, which is not reflective of the full genomic diversity within a given sample (since even a single patient derived sample represents a viral population within the host). Raw sequencing reads on the other hand require further analyses in order to extract variant information, and can often be prohibitively large in size. 

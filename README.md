@@ -48,17 +48,22 @@ Supported queries based on the following fields.
 
 ### How to handle iVar data
 TSV iVar output was converted to VCF by using the script from [here](https://github.com/nf-core/viralrecon/blob/dev/bin/ivar_variants_to_vcf.py). <br> 
-```python ivar_variants_to_vcf.py example.tsv example.vcf```
+```
+python ivar_variants_to_vcf.py example.tsv example.vcf
+```
 
 ### VCF annotation
 The VCF output was then annonated with snpEff.
   **To install snpEff** <br>
-  ```wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
+  ```
+  wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
   unzip snpEff_latest_core.zip
   ```
   
   **To annotate** <br> 
-  ```java -Xmx8g -jar ../path/to/snpEff/snpEff.jar NC_045512.2 your_input.vcf > output.ann.vcf```
+  ```
+  java -Xmx8g -jar ../path/to/snpEff/snpEff.jar NC_045512.2 your_input.vcf > output.ann.vcf
+  ```
 
 ### annotated VCF to JSON conversion. <br>
 

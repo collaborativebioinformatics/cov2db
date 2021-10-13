@@ -53,11 +53,11 @@ Supported queries based on the following fields.
 - [x] Coverage depth
 - [x] Strand bias
 
-*Sample metadata:* [in development]
-- [ ] Sequencing device
-- [ ] Library layout
-- [ ] Submission date
-- [ ] Study accession 
+*Sample metadata:* 
+- [x] Sequencing device
+- [x] Library layout
+- [x] Submission date
+- [x] Study accession 
 - [ ] Variant caller
 
 ### R Shiny UI

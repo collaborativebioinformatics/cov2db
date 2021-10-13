@@ -35,7 +35,7 @@ An illustration of low frequency single nucleotide variants (iSNVs) within two v
 
 
 ## Features
-**cov2db** is a tool that allows for integration of available variant calls from SARS-CoV-2 strains into an unified database. This makes this information easily available and searchable for the scientific community. This workflow  accepts a variety of versions of variant call files (VCF)as input. Our pipeline will annotate variants, convert the files to JSON and input the information to the MongoDB database. Once in the database, information about variants are easily queryable using a graphical user interface in Shiny.
+**cov2db** is a unified database containing information about SARS-CoV-2 strains variants that’s easily available and searchable for the scientific community. Cov2db is hosted in a mongoDB server, but can also be accessed using our Graphical User interface, created with a Shiny R. Our pipeline also provides the tools for any user to include their own datasets to the database, generating a formidable resource for the study of SARS-CoV-2.
 
 Supported queries based on the following fields.
 

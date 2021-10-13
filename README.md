@@ -16,18 +16,19 @@ Thus, we propose **cov2db**; a database resource for collecting low frequency va
 
 ## Timeline
 
-Sunday:
+### Sunday:
 
 <img src="ZomboMeme 11102021113553.jpg" width="250">
 
-Wednesday:
+
+### During Hackathon
+
+
+### Wednesday:
 
 <img src="ZomboMeme 12102021123250.jpg" width="250">
 
-- [x] Annotated 2,000 VCFs
-- [x] Converted 2,000 VCFs to JSON
-- [x] Scaled up our database to handle the data
-- [x] Prototyped a R Shiny UI for database interactions
+
 
 ## Features
 **cov2db** is a tool that allows for integration of available variant calls from SARS-CoV-2 strains into an unified database. This makes this information easily available and searchable for the scientific community. This workflow  accepts a variety of versions of variant call files (VCF)as input. Our pipeline will annotate variants, convert the files to JSON and input the information to the MongoDB database. Once in the database, information about variants are easily queryable using a graphical user interface in Shiny.

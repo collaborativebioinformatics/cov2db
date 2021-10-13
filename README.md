@@ -78,7 +78,7 @@ The VCF output was then annonated with snpEff.
 
 
 ### Workflow figure✍️
-![covid_freq-Group6 (1)](https://user-images.githubusercontent.com/72709799/136995595-8d77af8f-91f2-4e06-8863-3ec0db001638.jpeg)
+![covid_freq-Group6 (2)](https://user-images.githubusercontent.com/72709799/137154366-eb28a8e1-0020-4a12-b8b4-26b3d6012d06.jpeg)
 
 
 ## Related work

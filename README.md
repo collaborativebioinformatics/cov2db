@@ -82,7 +82,7 @@ The VCF output was then annonated with snpEff.
 * Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH (Sysadmin, mongodb) <br>
 * Maria Jose, Pondicherry Central University (data acquisition, mongodb)
 * BaiWei Lo, University of Konstanz (data acquisition, QC) <br>
-* Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb) <br>
+* Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb database development, workflow development) <br>
 * Sophie Poon, (Data acquisition, QC)<br>
 * Suresh Kumar, (QC)<br>
 * Nick Sapoval, Rice University (Team co-lead, data acquisition, writer) <br>

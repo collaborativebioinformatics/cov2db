@@ -139,7 +139,7 @@ task AnnotateVCF
      command
      <<<
            echo "Annotating VCF"
-           java -Xmx8g -jar snpEff.jar GRCh38 ${VCF_file} > ${sra_id}.annotated.vcf
+           java -Xmx8g -jar snpEff.jar NC_045512.2 ${VCF_file} > ${sra_id}.annotated.vcf
            echo "Annotation completed"
      >>>
 

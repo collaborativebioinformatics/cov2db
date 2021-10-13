@@ -35,7 +35,8 @@ Thus, we propose **cov2db**; a database resource for collecting low frequency va
 ## Methods
 
 ### Workflow figure✍️
-![covid_freq-Group6 (3)](https://user-images.githubusercontent.com/72709799/137154926-f86e7124-96e8-4d44-8d37-bf3ab3b46b03.jpeg)
+![covid_freq-Group6 (4)](https://user-images.githubusercontent.com/72709799/137173152-37368b5a-702e-44b5-94f1-31a4c2176a2d.jpeg)
+
 
 ### Example queries 
 

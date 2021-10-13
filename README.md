@@ -60,7 +60,7 @@ Supported queries based on the following fields.
 - [ ] Variant caller
 
 ### R Shiny UI
-Follow the link below for a quick video demo of the R Shiny interface to **cov2db**.
+Follow the link below for a quick video demo (no audio) of the R Shiny interface to **cov2db**.
 [![R Shiny Demo](https://user-images.githubusercontent.com/9452819/137140289-9c82fae4-fbff-4049-8022-75a42068c6b9.png)](https://youtu.be/dX4oLI-AjhQ "cov2db R Shiny Demo")
 
 ### Accessing the database

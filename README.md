@@ -60,7 +60,7 @@ Supported queries based on the following fields.
 - [ ] Variant caller
 
 ### R Shiny UI
-Follow the link below for a quick video demo (no audio) of the R Shiny interface to **cov2db**.
+Follow the link below for a quick video demo of the R Shiny interface to **cov2db**.
 [![R Shiny Demo](https://user-images.githubusercontent.com/9452819/137140289-9c82fae4-fbff-4049-8022-75a42068c6b9.png)](https://youtu.be/dX4oLI-AjhQ "cov2db R Shiny Demo")
 
 ### Accessing the database
@@ -104,6 +104,12 @@ Now, you are ready to run the queries.
 `db.annotated_vcf.count( { info_SequenceOntology: "missense_variant", info_af: { $lt: 0.01 }, info_dp: { $gt: 100000} } )`
 <img width="974" alt="Screen Shot 2021-10-13 at 11 05 52 AM" src="https://user-images.githubusercontent.com/9452819/137171450-f2b96a31-11ac-407b-ba67-e03139b1708f.png">
 
+4. Get sample accession numbers for samples that is missense variant in gene ORF1ab with allele frequency less than 0.001
+
+`db.annotated_vcf.find( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab", info_af:  { $lt: 0.001 }},{VCF_SAMPLE:1, _id:0} )`
+<img width="553" src="https://user-images.githubusercontent.com/11878969/137173163-a745c8db-8635-4eaf-88bc-3cd6812bc528.png">
+
+
 ## Methods
 
 ### How to handle iVar data
@@ -138,14 +144,14 @@ The VCF output was then annonated with snpEff.
 -----
 
 ## Team members
-* Daniel Agustinho, Washington University <strong>(Data Acquisition, Writer)</strong> <br>
-* Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH <strong>(Sysadmin, MongoDB)</strong> <br>
-* Maria Jose, Pondicherry Central University <strong>(Data Acquisition, MongoDB)</strong> <br>
-* BaiWei Lo, University of Konstanz <strong>(Data Acquisition, QC)</strong> <br>
-* Ramanandan Prabhakaran, Roche Canada <strong>(Sysadmin, MongoDB Database Development, Workflow Development)</strong> <br>
+* Daniel Agustinho, Washington University <strong>(data acquisition, writer)</strong> <br>
+* Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH <strong>(Sysadmin, mongodb)</strong> <br>
+* Maria Jose, Pondicherry Central University <strong>(data acquisition, mongodb)</strong> <br>
+* BaiWei Lo, University of Konstanz <strong>(data acquisition, QC)</strong> <br>
+* Ramanandan Prabhakaran, Roche Canada <strong>(Sysadmin, mongodb database development, workflow development)</strong> <br>
 * Sophie Poon, <strong>(Data acquisition, QC)</strong> <br>
 * Suresh Kumar, ICAR-NIVEDI <strong>(QC)</strong> <br>
-* Nick Sapoval, Rice University <strong>(Team co-lead, Data Acquisition, Writer, R Shiny Development)</strong> <br>
+* Nick Sapoval, Rice University <strong>(Team co-lead, data acquisition, writer, R Shiny development)</strong> <br>
 * Todd Treangen <strong>(Team Lead)</strong> <br>
 
 

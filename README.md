@@ -59,6 +59,29 @@ Supported queries based on the following fields.
 Follow the link below for a quick video demo of the R Shiny interface to **cov2db**.
 [![R Shiny Demo](https://user-images.githubusercontent.com/9452819/137140289-9c82fae4-fbff-4049-8022-75a42068c6b9.png)](https://youtu.be/dX4oLI-AjhQ "cov2db R Shiny Demo")
 
+### Accessing the database
+
+In order to access the database and run custom queries you will first need to install [MongoDB Compass](https://www.mongodb.com/try/download/compass) or [MongoDB Shell](https://www.mongodb.com/try/download/shell). The following examples make use of MongoDB Compass installation.  
+
+To **connect** to the cov2db database you will need to open MongoDB Compass app and press `⌘N` on a Mac computer or navigate to the menu at the top and pick `Connect`->`Connect to` item.
+
+<img width="579" alt="Screen Shot 2021-10-13 at 10 35 20 AM" src="https://user-images.githubusercontent.com/9452819/137166251-8c08b8be-dc2f-469d-b596-dfc1db06bd52.png">
+
+In the new window paste in the following connection string `mongodb://sno.cs.rice.edu:27017` as shown and click connect.
+
+<img width="1283" alt="Screen Shot 2021-10-13 at 10 37 08 AM" src="https://user-images.githubusercontent.com/9452819/137166544-ab6b79f6-9d24-4af5-a303-5c4a6041f5b0.png">
+
+Finally, select **cov2db** database, and navigate to the `annotated_vcf` collection.
+
+To begin using the shell and start issuing queries, click on the `mongosh` button in the lower left corner and a shell with `>test` prompt will appear.
+<img width="330" alt="Screen Shot 2021-10-13 at 10 39 36 AM" src="https://user-images.githubusercontent.com/9452819/137167188-8e5961d6-f1e6-4c2e-95cd-59d4daf6ab18.png">
+
+Finally, type the following command on the shell `use cov2db` to connect to the **cov2db** database.
+
+<img width="347" alt="Screen Shot 2021-10-13 at 10 42 37 AM" src="https://user-images.githubusercontent.com/9452819/137167551-05cb261d-6274-42b7-a854-8e05b6f70437.png">
+
+Now, you are ready to run the queries.
+
 ### Example queries 
 
 1. Get the count of missense variants reported for ORF1ab

@@ -15,18 +15,22 @@ Thus, we propose **cov2db**; a database resource for collecting low frequency va
 
 ## Timeline
 
-Sunday:
+### Sunday
 
 <img src="ZomboMeme 11102021113553.jpg" width="250">
 
-Wednesday:
 
-<img src="ZomboMeme 12102021123250.jpg" width="250">
 
+### During Hackathon
 - [x] Annotated 2,000 VCFs
 - [x] Converted 2,000 VCFs to JSON
 - [x] Scaled up our database to handle the data
 - [x] Prototyped a R Shiny UI for database interactions
+
+### Wednesday
+<img src="ZomboMeme 12102021123250.jpg" width="250">
+
+
 
 ## Methods
 

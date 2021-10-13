@@ -12,7 +12,8 @@ Global SARS-CoV-2 sequencing efforts have resulted in a massive genomic dataset 
 
 Thus, we propose **cov2db**; a database resource for collecting low frequency variant information for available SARS-CoV-2 data (as of October 12th, 2021 there are more than 1.2 million SARS-CoV-2 sequencing datasets in SRA and ENA). Our goal is to provide an easy to use query system, and contribute to a database of VCF files that contain variant calls for SARS-CoV-2 samples. We hope that such interactive database will speed up downstream analyses and encourage collaboration.
 
-<!--- VCF files storing low frequency info for SARS-CoV-2 are not widely available due to their size and limited downstream usage to date. However, there are over 1.2 million sequenced datasets in ENA/SRA from COVID-19 samples, representing a unique opportunity to create a community resource for query and tracking intrahost viral evolution. The goal of this hackathon project is to create an easy to use database for the community that is able to store SARS-CoV-2 low frequency/intrahost variants. --->
+![figure6_covid](https://user-images.githubusercontent.com/9452819/137174148-a5a5cff4-4903-4eef-9d46-7e66ed921235.jpeg)
+An illustration of low frequency single nucleotide variants (iSNVs) within two viral populations inside infected hosts [DOI:10.1101/gr.268961.120](https://genome.cshlp.org/content/early/2021/02/18/gr.268961.120).
 
 ## Timeline
 

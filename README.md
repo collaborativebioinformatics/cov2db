@@ -129,8 +129,7 @@ The VCF output was then annonated with snpEff.
 
 
 ### Workflow figure✍️
-![covid_freq-Group6 (4)](https://user-images.githubusercontent.com/72709799/137173074-9779dbd3-32ef-41f5-9076-fb854e6c554d.jpeg)
-
+![covid_freq-Group6 (3)](https://user-images.githubusercontent.com/72709799/137154926-f86e7124-96e8-4d44-8d37-bf3ab3b46b03.jpeg)
 
 
 ## Related work
@@ -139,14 +138,14 @@ The VCF output was then annonated with snpEff.
 -----
 
 ## Team members
-* Daniel Agustinho, Washington University <strong>(data acquisition, writer)</strong> <br>
-* Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH <strong>(Sysadmin, mongodb)</strong> <br>
-* Maria Jose, Pondicherry Central University <strong>(data acquisition, mongodb)</strong> <br>
-* BaiWei Lo, University of Konstanz <strong>(data acquisition, QC)</strong> <br>
-* Ramanandan Prabhakaran, Roche Canada <strong>(Sysadmin, mongodb database development, workflow development)</strong> <br>
+* Daniel Agustinho, Washington University <strong>(Data Acquisition, Writer)</strong> <br>
+* Li Chuin Chong, Twincore GmbH/HZI-DKFZ under auspices MHH <strong>(Sysadmin, MongoDB)</strong> <br>
+* Maria Jose, Pondicherry Central University <strong>(Data Acquisition, MongoDB)</strong> <br>
+* BaiWei Lo, University of Konstanz <strong>(Data Acquisition, QC)</strong> <br>
+* Ramanandan Prabhakaran, Roche Canada <strong>(Sysadmin, MongoDB Database Development, Workflow Development)</strong> <br>
 * Sophie Poon, <strong>(Data acquisition, QC)</strong> <br>
 * Suresh Kumar, ICAR-NIVEDI <strong>(QC)</strong> <br>
-* Nick Sapoval, Rice University <strong>(Team co-lead, data acquisition, writer, R Shiny development)</strong> <br>
+* Nick Sapoval, Rice University <strong>(Team co-lead, Data Acquisition, Writer, R Shiny Development)</strong> <br>
 * Todd Treangen <strong>(Team Lead)</strong> <br>
 
 

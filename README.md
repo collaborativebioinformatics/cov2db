@@ -22,7 +22,10 @@ Thus, we propose **cov2db**; a database resource for collecting low frequency va
 
 
 ### During Hackathon
-
+- [x] Annotated 2,000 VCFs
+- [x] Converted 2,000 VCFs to JSON
+- [x] Scaled up our database to handle the data
+- [x] Prototyped a R Shiny UI for database interactions
 
 ### Wednesday:
 

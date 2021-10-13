@@ -140,7 +140,7 @@ The VCF output was then annonated with snpEff.
 * Ramanandan Prabhakaran, Roche Canada <strong>(Sysadmin, mongodb database development, workflow development)</strong> <br>
 * Sophie Poon, <strong>(Data acquisition, QC)</strong> <br>
 * Suresh Kumar, ICAR-NIVEDI <strong>(QC)</strong> <br>
-* Nick Sapoval, Rice University <strong>(Team co-lead, data acquisition, writer)</strong> <br>
+* Nick Sapoval, Rice University <strong>(Team co-lead, data acquisition, writer, R Shiny development)</strong> <br>
 * Todd Treangen <strong>(Team Lead)</strong> <br>
 
 

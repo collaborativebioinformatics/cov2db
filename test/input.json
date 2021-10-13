@@ -1,0 +1,6 @@
+{
+        "Cov2DB_Preprocessing.sra_accession_file" : "SRA_accession_list.txt",
+        "Cov2DB_Preprocessing.reference_file" : "GRCh38_reference.fa",
+        "Cov2DB_Preprocessing.cpu" : "1",
+        "Cov2DB_Preprocessing.memory" : "12"
+}

@@ -21,6 +21,7 @@ workflow Cov2DB_Preprocessing
                 call BAM2VCF { input: cpu=cpu, memory=memory, BAM=SAM2BAM.BAM_file }
                 call CompressVCF { input: cpu=cpu, memory=memory, sra_id=entry, VCF=BAM2VCF.VCF_file }
                 call VCF2JSON { input: cpu=cpu, memory=memory, VCF=CompressVCF.VCF_file }
+        }
 }
 
 task SraToFastq

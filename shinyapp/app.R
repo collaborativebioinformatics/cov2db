@@ -1,5 +1,6 @@
 library(shiny)
 library(mongolite)
+library(ggplot2)
 
 host = "mongodb://sno.cs.rice.edu:27017"
 databaseName <- "cov2db"
@@ -25,6 +26,7 @@ loadData <- function(gene) {
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
+    img(src='assets/cov2db_logo_bg.pnh', align = "center"),
     
     #fluidRow(
     #    column(12,
@@ -36,7 +38,7 @@ ui <- fluidPage(
               label = "Gene of interest (or all)",
               value = "all"),
     
-    plotOutput('hist_af'),
+    #plotOutput('hist_af'),
     plotOutput('hist_type')
     
 )
@@ -46,20 +48,22 @@ server <- function(input, output) {
     
     output$table <- renderDataTable(data())
     
-    output$hist_af <- renderPlot({
-        req(data)
-        hist(as.double(unlist(data()["info_af"])),
-             main="Distribution of allele frequencies",
-             xlab="Allele frequency",
-             ylab="Number of variants")
-    }) 
+    #output$hist_af <- renderPlot({
+    #    req(data)
+    #    ggplot(data(), aes(x=info_af, stat=count)) +
+    #        geom_histogram()
+             #main="Distribution of allele frequencies",
+             #xlab="Allele frequency",
+             #ylab="Number of variants")
+    #}) 
     
     mut_type_table <- reactive(table(data()["info_SequenceOntology"]))
     
     output$hist_type <- renderPlot({
         req(data)
         barplot(mut_type_table(),
-            main="Distribution of mutation types")
+                main="Distribution of mutation types",
+                ylab="Number of variants")
     })
 }
 

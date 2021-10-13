@@ -99,6 +99,11 @@ Now, you are ready to run the queries.
 `db.annotated_vcf.find( { start: 23403 }, {VCF_SAMPLE: 1, _id: 0})`
 <img width="553" alt="Screen Shot 2021-10-13 at 9 39 52 AM" src="https://user-images.githubusercontent.com/9452819/137155894-8048672d-09a7-4ec3-807d-87689609ef2a.png">
 
+3. Get the count of missense variants occuring at frequency below 1% within the samples with depth of coverage >100000x at the variant call position
+
+`db.annotated_vcf.count( { info_SequenceOntology: "missense_variant", info_af: { $lt: 0.01 }, info_dp: { $gt: 100000} } )`
+<img width="974" alt="Screen Shot 2021-10-13 at 11 05 52 AM" src="https://user-images.githubusercontent.com/9452819/137171450-f2b96a31-11ac-407b-ba67-e03139b1708f.png">
+
 ## Methods
 
 ### How to handle iVar data

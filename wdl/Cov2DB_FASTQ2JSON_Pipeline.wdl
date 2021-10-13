@@ -4,7 +4,7 @@
 # Step3: SAM files compressed to BAM files
 # Step4: Variant calling performed on BAM files
 # Step5: Compressing Variant Calling Files
-# Step6: Annotating VCF using SNPEFF tool
+# Step6: Annotating VCF using SnpEff tool
 # Step7: VCF files are converted to JSON
 
 workflow Cov2DB_Preprocessing

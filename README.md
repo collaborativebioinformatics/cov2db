@@ -14,6 +14,21 @@ Thus, we propose **cov2db**; a database resource for collecting low frequency va
 
 <!--- VCF files storing low frequency info for SARS-CoV-2 are not widely available due to their size and limited downstream usage to date. However, there are over 1.2 million sequenced datasets in ENA/SRA from COVID-19 samples, representing a unique opportunity to create a community resource for query and tracking intrahost viral evolution. The goal of this hackathon project is to create an easy to use database for the community that is able to store SARS-CoV-2 low frequency/intrahost variants. --->
 
+## Timeline
+
+Sunday:
+
+<img src="ZomboMeme 11102021113553.jpg" width="250">
+
+Wednesday:
+
+<img src="ZomboMeme 12102021123250.jpg" width="250">
+
+- [x] Annotated 2,000 VCFs
+- [x] Converted 2,000 VCFs to JSON
+- [x] Scaled up our database to handle the data
+- [x] Prototyped a R Shiny UI for database interactions
+
 ## Features
 **cov2db** is a tool that allows for integration of available variant calls from SARS-CoV-2 strains into an unified database. This makes this information easily available and searchable for the scientific community. This workflow  accepts a variety of versions of variant call files (VCF)as input. Our pipeline will annotate variants, convert the files to JSON and input the information to the MongoDB database. Once in the database, information about variants are easily queryable using a graphical user interface in Shiny.
 
@@ -95,7 +110,7 @@ The VCF output was then annonated with snpEff.
 * Maria Jose, Pondicherry Central University (data acquisition, mongodb)
 * BaiWei Lo, University of Konstanz (data acquisition, QC) <br>
 * Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb database development, workflow development) <br>
-* Sophie Poon, Weill Cornell Medicine, (Data acquisition, QC)<br>
+* Sophie Poon, (Data acquisition, QC)<br>
 * Suresh Kumar, ICAR-NIVEDI (QC)<br>
 * Nick Sapoval, Rice University (Team co-lead, data acquisition, writer) <br>
 * Todd Treangen (Team Lead) <br>

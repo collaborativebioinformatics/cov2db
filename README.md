@@ -110,10 +110,6 @@ Now, you are ready to run the queries.
 `db.annotated_vcf.find( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab", info_af:  { $lt: 0.001 }},{VCF_SAMPLE:1, _id:0} )`
 <img width="974" alt="Screenshot" src="https://user-images.githubusercontent.com/11878969/137173163-a745c8db-8635-4eaf-88bc-3cd6812bc528.png">
 
-5. Aggregate variant call data and metadata
-
-`db.annotated_vcf.aggregate( {$lookup: {from: "coguk_metadata", localField: "VCF_SAMPLE", foreignField: "run_accession", as: "metadata"}} )`
-<img width="1116" alt="Screen Shot 2021-10-13 at 11 19 07 AM" src="https://user-images.githubusercontent.com/9452819/137173909-da71291b-1f2c-40f3-a11b-791d3667d0fb.png">
 
 ## Methods
 

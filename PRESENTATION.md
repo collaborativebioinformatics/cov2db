@@ -112,3 +112,7 @@ Supported queries based on the following fields.
 * Nick Sapoval, Rice University <strong>(Team co-lead, data acquisition, writer, R Shiny development)</strong> <br>
 * Todd Treangen <strong>(Team Lead)</strong> <br>
 
+<img width="1151" alt="Screen Shot 2021-10-13 at 11 59 44 AM" src="https://user-images.githubusercontent.com/72709799/137182382-00f70da7-11d7-4ba3-9172-d8c40a493230.png">
+
+
+

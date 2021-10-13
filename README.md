@@ -46,7 +46,12 @@ Follow the link below for a quick video demo of the R Shiny interface to **cov2d
 
 ### Example queries 
 
-[FILL IN WITH SAMPLE QUERY + SCREENSHOTS]
+1. Get the count of missense variants reported for ORF1ab
+
+`db.annotated_vcf.count( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab" } )`
+<img width="789" alt="Screen Shot 2021-10-13 at 9 22 34 AM" src="https://user-images.githubusercontent.com/9452819/137153799-b284ae37-1165-454e-958f-c5adcc9515e3.png">
+
+
 
 ## Methods
 

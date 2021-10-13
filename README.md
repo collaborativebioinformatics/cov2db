@@ -107,7 +107,7 @@ Now, you are ready to run the queries.
 4. Get sample accession numbers for samples that is missense variant in gene ORF1ab with allele frequency less than 0.001
 
 `db.annotated_vcf.find( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab", info_af:  { $lt: 0.001 }},{VCF_SAMPLE:1, _id:0} )`
-<img width="553" src="https://user-images.githubusercontent.com/11878969/137173163-a745c8db-8635-4eaf-88bc-3cd6812bc528.png">
+<img width="974" alt="Screenshot" src="https://user-images.githubusercontent.com/11878969/137173163-a745c8db-8635-4eaf-88bc-3cd6812bc528.png">
 
 
 ## Methods

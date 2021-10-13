@@ -144,10 +144,10 @@ The VCF output was then annonated with snpEff.
 * Todd Treangen <strong>(Team Lead)</strong> <br>
 
 
-<img src="ZomboMeme 11102021113553.jpg" width="500">
+<!--- <img src="ZomboMeme 11102021113553.jpg" width="500">
 
 ------
-<!--- ## cov2db will contain the following information:
+ ## cov2db will contain the following information:
 * ENA/SRA id (and bioproject)
 - [ ] assigned lineage/VOC of SRA sample
 - [ ] geographic location 

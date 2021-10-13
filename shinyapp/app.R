@@ -26,7 +26,55 @@ loadData <- function(gene) {
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-    img(src='assets/cov2db_logo_bg.pnh', align = "center"),
+    fluidRow(
+        column(3, 
+               img(src='cov2db_logo_bg.png', width="100%", align="center"))
+        ),
+    hr(),
+    fluidRow(
+        column(3, h2("Data filters")),
+        column(3,
+               textInput(inputId = "gene_name",
+                       label = "Gene of interest (or all)",
+                       value = "all")),
+        column(3,
+               textInput(inputId = "mutation_type",
+                         label = "Mutation type (or all)",
+                         value = "all")),
+        column(3,
+               numericInput(inputId = "position_nt",
+                            label = "Position (nucleotide)",
+                            value = -1,
+                            min = -1,
+                            max = 30000,
+                            step = 1))
+        ),
+    fluidRow(
+        column(3,
+               numericInput(inputId = "allele_frequency_min",
+                            label = "Minimum allele frequncy",
+                            value = 0.0,
+                            min = 0.0,
+                            max = 1.0,
+                            step = 0.01)),
+        column(3,
+               numericInput(inputId = "allele_frequency_max",
+                            label = "Maximum allele frequncy",
+                            value = 0.0,
+                            min = 0.0,
+                            max = 1.0,
+                            step = 0.01)),
+        column(3,
+               textInput(inputId = "allele_frequency_min",
+                            label = "Reference amino acid",
+                            value = "all")),
+        column(3,
+               textInput(inputId = "allele_frequency_max",
+                            label = "Alterantive amino acid",
+                            value = "all"))
+    ),
+               
+    
     
     #fluidRow(
     #    column(12,
@@ -34,9 +82,7 @@ ui <- fluidPage(
     #    )
     #)
     
-    textInput(inputId = "gene_name",
-              label = "Gene of interest (or all)",
-              value = "all"),
+    hr(),
     
     #plotOutput('hist_af'),
     plotOutput('hist_type')

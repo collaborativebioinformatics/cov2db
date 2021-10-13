@@ -1,5 +1,3 @@
-
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=https://github.com/collaborativebioinformatics/cov2db)
 # cov2db: a low frequency variant DB for SARS-CoV-2
 
 ![cov2db_logo_bg](https://user-images.githubusercontent.com/9452819/137010749-a6bebcbd-ddb6-4b0b-900e-a85fe9125c59.png)
@@ -30,6 +28,27 @@ Wednesday:
 - [x] Scaled up our database to handle the data
 - [x] Prototyped a R Shiny UI for database interactions
 
+## Methods
+
+### Workflow figure✍️
+![covid_freq-Group6 (3)](https://user-images.githubusercontent.com/72709799/137154926-f86e7124-96e8-4d44-8d37-bf3ab3b46b03.jpeg)
+
+### Example queries 
+
+1. Get the count of missense variants reported for ORF1ab
+
+`db.annotated_vcf.count( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab" } )`
+<img width="789" alt="Screen Shot 2021-10-13 at 9 22 34 AM" src="https://user-images.githubusercontent.com/9452819/137153799-b284ae37-1165-454e-958f-c5adcc9515e3.png">
+
+2. Get sample accession numbers for samples that have a variant at position 23403 in the genome (D614G)
+
+`db.annotated_vcf.find( { start: 23403 }, {VCF_SAMPLE: 1, _id: 0})`
+<img width="553" alt="Screen Shot 2021-10-13 at 9 39 52 AM" src="https://user-images.githubusercontent.com/9452819/137155894-8048672d-09a7-4ec3-807d-87689609ef2a.png">
+
+### R Shiny UI
+Follow the link below for a quick video demo of the R Shiny interface to **cov2db**.
+[![R Shiny Demo](https://user-images.githubusercontent.com/9452819/137140289-9c82fae4-fbff-4049-8022-75a42068c6b9.png)](https://youtu.be/dX4oLI-AjhQ "cov2db R Shiny Demo")
+
 ## Features
 **cov2db** is a tool that allows for integration of available variant calls from SARS-CoV-2 strains into an unified database. This makes this information easily available and searchable for the scientific community. This workflow  accepts a variety of versions of variant call files (VCF)as input. Our pipeline will annotate variants, convert the files to JSON and input the information to the MongoDB database. Once in the database, information about variants are easily queryable using a graphical user interface in Shiny.
 
@@ -55,50 +74,6 @@ Supported queries based on the following fields.
 - [ ] Submission date
 - [ ] Study accession 
 - [ ] Variant caller
-
-### R Shiny UI
-Follow the link below for a quick video demo of the R Shiny interface to **cov2db**.
-[![R Shiny Demo](https://user-images.githubusercontent.com/9452819/137140289-9c82fae4-fbff-4049-8022-75a42068c6b9.png)](https://youtu.be/dX4oLI-AjhQ "cov2db R Shiny Demo")
-
-### Example queries 
-
-1. Get the count of missense variants reported for ORF1ab
-
-`db.annotated_vcf.count( { info_SequenceOntology: "missense_variant", info_GeneName: "ORF1ab" } )`
-<img width="789" alt="Screen Shot 2021-10-13 at 9 22 34 AM" src="https://user-images.githubusercontent.com/9452819/137153799-b284ae37-1165-454e-958f-c5adcc9515e3.png">
-
-2. Get sample accession numbers for samples that have a variant at position 23403 in the genome (D614G)
-
-`db.annotated_vcf.find( { start: 23403 }, {VCF_SAMPLE: 1, _id: 0})`
-<img width="553" alt="Screen Shot 2021-10-13 at 9 39 52 AM" src="https://user-images.githubusercontent.com/9452819/137155894-8048672d-09a7-4ec3-807d-87689609ef2a.png">
-
-## Methods
-
-### How to handle iVar data
-TSV iVar output was converted to VCF by using the script from [here](https://github.com/nf-core/viralrecon/blob/dev/bin/ivar_variants_to_vcf.py). <br> 
-```
-python ivar_variants_to_vcf.py example.tsv example.vcf
-```
-
-### VCF annotation
-The VCF output was then annonated with snpEff.
-  **To install snpEff** <br>
-  ```
-  wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
-  unzip snpEff_latest_core.zip
-  ```
-  
-  **To annotate** <br> 
-  ```
-  java -Xmx8g -jar ../path/to/snpEff/snpEff.jar NC_045512.2 your_input.vcf > output.ann.vcf
-  ```
-
-### annotated VCF to JSON conversion. <br>
-
-
-### Workflow figure✍️
-![covid_freq-Group6 (3)](https://user-images.githubusercontent.com/72709799/137154926-f86e7124-96e8-4d44-8d37-bf3ab3b46b03.jpeg)
-
 
 ## Related work
 [VAPr](https://github.com/ucsd-ccbb/VAPr/) is an excellent mongodb based database for storing variant info. UCSC SARS-CoV-2 genome broswers also provides visualization of intrahost variants [here](https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=NC_045512v2%3A1%2D29903&hgsid=1183075721_4GlEuE8o51gGamZyAQfT5UgwpPhq). 

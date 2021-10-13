@@ -84,7 +84,7 @@ The VCF output was then annonated with snpEff.
 * BaiWei Lo, University of Konstanz (data acquisition, QC) <br>
 * Ramanandan Prabhakaran, Roche Canada (Sysadmin, mongodb database development, workflow development) <br>
 * Sophie Poon, (Data acquisition, QC)<br>
-* Suresh Kumar, (QC)<br>
+* Suresh Kumar, ICAR-NIVEDI (QC)<br>
 * Nick Sapoval, Rice University (Team co-lead, data acquisition, writer) <br>
 * Todd Treangen (Team Lead) <br>
 

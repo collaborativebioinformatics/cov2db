@@ -16,7 +16,7 @@ workflow Cov2DB_Preprocessing
         scatter (entry in sra_entries)
         {
 		call SraToFastq { input: cpu=cpu, memory=memory, sra_id=entry }
-		call FASTQ2SAM { input: cpu=cpu, memory=memory, sra_id=entry, R1_FASTQ=SraToFastq.r1_fastq, R2_FASTQ=SraToFastq.r2_fastq, Reference = reference_file }
+		call FASTQ2SAM { input: cpu=cpu, memory=memory, sra_id=entry, R1_FASTQ=SraToFastq.r1_fastq, R2_FASTQ=SraToFastq.r2_fastq, reference_file = reference_file }
                 call SAM2BAM { input: cpu=cpu, memory=memory, sra_id=entry, file=FASTQ2SAM.SAM_file }
                 call BAM2VCF { input: cpu=cpu, memory=memory, BAM=SAM2BAM.BAM_file }
                 call CompressVCF { input: cpu=cpu, memory=memory, sra_id=entry, VCF=BAM2VCF.VCF_file }
@@ -105,11 +105,11 @@ task BAM2VCF
      Int memory
      String sra_id
      File BAM_file
-     File reference
+     File reference_file
         command
         <<<
            echo "Generating VCF from BAM file"
-           freebayes -f ${reference} ${Bam_file} > ${sra_id}.vcf 
+           freebayes -f ${reference_file} ${Bam_file} > ${sra_id}.vcf 
         >>>
 
         runtime

@@ -149,7 +149,7 @@ The VCF output was then annonated with snpEff.
 * [Li Chuin Chong](https://github.com/ChongLC), Twincore GmbH/HZI-DKFZ under auspices MHH <strong>(Sysadmin, mongodb)</strong> <br>
 * [Maria Jose](https://github.com/MariaJose501), Pondicherry Central University <strong>(data acquisition, mongodb)</strong> <br>
 * BaiWei Lo, University of Konstanz <strong>(data acquisition, QC)</strong> <br>
-* [Ramanandan Prabhakaran](https://github.com/Ramanandan), Roche Canada <strong>(Sysadmin, mongodb database development, workflow development)</strong> <br>
+* [Ramanandan Prabhakaran](https://github.com/Ramanandan), Roche Canada <strong>(Sysadmin, python wrapper, mongodb database development, workflow development)</strong> <br>
 * [Sophie Poon](https://github.com/chilampoon), <strong>(Data acquisition, QC)</strong> <br>
 * [Suresh Kumar](https://github.com/suresh2014), ICAR-NIVEDI <strong>(QC)</strong> <br>
 * [Nick Sapoval](https://github.com/nsapoval), Rice University <strong>(Team co-lead, data acquisition, writer, R Shiny development)</strong> <br>

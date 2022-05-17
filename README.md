@@ -190,3 +190,9 @@ The VCF output was then annonated with snpEff.
 * Show me a histogram of frequency of intrahost variants across the reference (for all data in the database)
 * filter intrahost variants by pvalue, min coverage, variant caller, etc  --->
 
+####### CITATION:
+
+[CITE:](https://doi.org/10.12688/f1000research.110194.1)
+ Walker K, Kalra D, Lowdon R et al. The third international hackathon for applying insights into large-scale genomic composition to use cases in a wide range of organisms [version 1; peer review: awaiting peer review]. F1000Research 2022, 11:530 (https://doi.org/10.12688/f1000research.110194.1) 
+
+###########
